@@ -1,6 +1,6 @@
 {
   "name": "chonks-ui-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component library for Chonks UI - A retro brutalist design system",
   "main": "src/index.js",
   "module": "src/index.js",

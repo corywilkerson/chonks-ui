@@ -1,6 +1,6 @@
 {
   "name": "chonks-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A retro brutalist design system for power users",
   "main": "css/chonks.css",
   "style": "css/chonks.css",

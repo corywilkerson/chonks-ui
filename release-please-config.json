@@ -7,7 +7,7 @@
       "version-file": "package.json"
     },
     "react": {
-      "package-name": "@chonks-ui/react",
+      "package-name": "chonks-ui-react",
       "changelog-path": "CHANGELOG.md",
       "version-file": "react/package.json"
     }

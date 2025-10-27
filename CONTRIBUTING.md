@@ -94,7 +94,7 @@ If you need to trigger a release manually:
 ### What Gets Released
 
 - **Main package**: `chonks-ui` (CSS + React)
-- **React package**: `@chonks-ui/react` (React components)
+- **React package**: `chonks-ui-react` (React components)
 - **CDN**: Available on unpkg.com immediately
 - **GitHub release**: With changelog and notes
 

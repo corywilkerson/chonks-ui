@@ -54,7 +54,7 @@ jobs:
       - name: Success message
         run: |
           echo "✅ Successfully published chonks-ui@${{ steps.version.outputs.version }}"
-          echo "✅ Successfully published @chonks-ui/react@${{ steps.version.outputs.version }}"
+          echo "✅ Successfully published chonks-ui-react@${{ steps.version.outputs.version }}"
           echo ""
           echo "🔗 CDN available at:"
           echo "   https://unpkg.com/chonks-ui@${{ steps.version.outputs.version }}/css/chonks.css"

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+react/node_modules/
+
+# Git and GitHub
+.git/
+.github/
+.gitignore
+
+# Build and development files
+*.log
+npm-debug.log*
+.DS_Store
+
+# Development only
+examples/
+.release-please-manifest.json
+release-please-config.json
+
+# Lock files (users should generate their own)
+package-lock.json
+react/package-lock.json

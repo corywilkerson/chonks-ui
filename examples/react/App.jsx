@@ -146,10 +146,10 @@ function App() {
             <h3 className="chonks-h3 chonks-mb-sm">Terminal</h3>
             <Terminal title="installation.sh">
               <pre><code>{`# Install Chonks UI
-npm install @chonks-ui/react
+npm install chonks-ui-react
 
 # Import components
-import { Button, Card } from '@chonks-ui/react'`}</code></pre>
+import { Button, Card } from 'chonks-ui-react'`}</code></pre>
             </Terminal>
           </Card>
         </div>

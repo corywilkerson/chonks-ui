@@ -1,5 +1,5 @@
 {
-  "name": "@chonks-ui/react",
+  "name": "chonks-ui-react",
   "version": "1.0.0",
   "description": "React component library for Chonks UI - A retro brutalist design system",
   "main": "src/index.js",

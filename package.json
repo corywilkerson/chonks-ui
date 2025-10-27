@@ -18,9 +18,7 @@
     },
     "./css": "./css/chonks.css",
     "./css/*": "./css/*",
-    "./themes/*": "./css/themes/*",
-    "./react": "./react/src/index.js",
-    "./react/*": "./react/src/*"
+    "./themes/*": "./css/themes/*"
   },
   "keywords": [
     "design-system",

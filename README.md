@@ -70,7 +70,7 @@ import {
   Terminal,
   useTheme,
   THEMES
-} from '@chonks-ui/react'
+} from 'chonks-ui-react'
 
 function App() {
   // Apply theme
@@ -83,7 +83,7 @@ function App() {
 
       <Card>
         <Terminal title="terminal">
-          <pre>npm install @chonks-ui/react</pre>
+          <pre>npm install chonks-ui-react</pre>
         </Terminal>
       </Card>
     </div>
@@ -111,7 +111,7 @@ Chonks UI comes with 5 pre-built color themes:
 
 **React:**
 ```jsx
-import { useTheme, THEMES } from '@chonks-ui/react'
+import { useTheme, THEMES } from 'chonks-ui-react'
 
 function App() {
   const [theme, setTheme] = useState(THEMES.PINK)

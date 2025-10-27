@@ -26,7 +26,7 @@ Chonks UI is inspired by:
 
 ## Installation
 
-### NPM (Recommended)
+### CSS Only (Plain HTML/JS)
 
 ```bash
 npm install chonks-ui
@@ -37,6 +37,14 @@ npm install chonks-ui
 <link rel="stylesheet" href="node_modules/chonks-ui/css/chonks.css">
 <link rel="stylesheet" href="node_modules/chonks-ui/css/themes/pink.css">
 ```
+
+### React Components
+
+```bash
+npm install chonks-ui-react
+```
+
+Note: The React package imports the CSS automatically, so you don't need to install both packages for React projects.
 
 ### CDN (No Build Tools)
 
@@ -61,7 +69,11 @@ npm install chonks-ui
 
 [📖 Getting Started Guide](./docs/getting-started.md) | [🤝 Contributing](./CONTRIBUTING.md) | [🔒 Security](./SECURITY.md)
 
-### React
+### React Example
+
+```bash
+npm install chonks-ui-react
+```
 
 ```jsx
 import {

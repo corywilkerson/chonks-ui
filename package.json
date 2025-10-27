@@ -6,10 +6,10 @@
   "style": "css/chonks.css",
   "files": [
     "css/",
-    "react/",
     "docs/",
     "examples/",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     ".": {

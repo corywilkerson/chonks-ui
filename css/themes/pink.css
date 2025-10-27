@@ -1,0 +1,26 @@
+/**
+ * Chonks UI - Pink Theme
+ * Inspired by the cutie app aesthetic
+ */
+
+:root {
+  /* Pink Color Palette */
+  --chonks-primary: #ff6b9d;
+  --chonks-primary-dark: #e5427a;
+  --chonks-primary-light: #ffb3d1;
+
+  /* Neutral Colors */
+  --chonks-surface: #ffffff;
+  --chonks-background: #fafbfc;
+  --chonks-text: #2c3e50;
+  --chonks-text-secondary: #666666;
+  --chonks-text-muted: #999999;
+
+  /* Semantic Colors (Pink-tinted) - Beautiful pastel harmony */
+  --chonks-success: #a8e6cf;
+  --chonks-success-dark: #7dd3fc;
+  --chonks-warning: #fde68a;
+  --chonks-warning-dark: #f59e0b;
+  --chonks-error: #fecaca;
+  --chonks-error-dark: #f87171;
+}

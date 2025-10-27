@@ -1,0 +1,28 @@
+{
+  "name": "@chonks-ui/react",
+  "version": "1.0.0",
+  "description": "React component library for Chonks UI - A retro brutalist design system",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "echo 'No build needed - pure CSS and React'",
+    "test": "echo 'Tests here'"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "design-system",
+    "brutalist",
+    "retro"
+  ],
+  "author": "Cory Wilkerson",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

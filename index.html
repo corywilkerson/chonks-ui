@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chonks UI - Retro Brutalist Design System</title>
+    <link rel="stylesheet" href="css/chonks.css">
+    <link rel="stylesheet" href="css/themes/pink.css">
+    <style>
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 64px 24px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+        .theme-switcher {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="chonks-h1 chonks-display" style="font-size: 72px; margin-bottom: 24px;">CHONKS UI</h1>
+        <p class="chonks-text-xl chonks-mb-lg" style="max-width: 600px; opacity: 0.9;">
+            A retro brutalist design system for power users.
+            Build terminal-inspired interfaces with swappable themes.
+        </p>
+        <div class="chonks-flex chonks-gap-md chonks-mb-xl">
+            <a href="examples/html/index.html" class="chonks-btn chonks-btn--lg">View Examples</a>
+            <a href="README.md" class="chonks-btn chonks-btn--lg chonks-btn--outline">Documentation</a>
+        </div>
+        <div class="chonks-flex chonks-gap-sm" style="flex-wrap: wrap; justify-content: center;">
+            <span class="chonks-badge chonks-badge--primary">5 Themes</span>
+            <span class="chonks-badge chonks-badge--success">16 Components</span>
+            <span class="chonks-badge chonks-badge--warning">A11y Features</span>
+            <span class="chonks-badge">Zero Dependencies</span>
+            <span class="chonks-badge">React + HTML</span>
+        </div>
+    </div>
+
+    <div class="chonks-container">
+        <section class="chonks-mb-xl">
+            <h2 class="chonks-h2 chonks-display chonks-text-center chonks-mb-lg">Quick Start</h2>
+
+            <div class="feature-grid">
+                <div class="chonks-card">
+                    <h3 class="chonks-h3 chonks-mb-sm">Plain HTML/CSS</h3>
+                    <div class="chonks-terminal chonks-mb-md">
+                        <div class="chonks-terminal-titlebar">
+                            <span>index.html</span>
+                        </div>
+                        <div class="chonks-terminal-content">
+<pre><code>&lt;link rel="stylesheet" href="chonks.css"&gt;
+&lt;link rel="stylesheet" href="themes/pink.css"&gt;
+
+&lt;button class="chonks-btn"&gt;Hello!&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                    <p class="chonks-text-sm chonks-text-secondary">No build tools required. Just link and go.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h3 chonks-mb-sm">React</h3>
+                    <div class="chonks-terminal chonks-mb-md">
+                        <div class="chonks-terminal-titlebar">
+                            <span>App.jsx</span>
+                        </div>
+                        <div class="chonks-terminal-content">
+<pre><code>import { Button, useTheme, THEMES }
+from 'chonks-ui/react'
+
+useTheme(THEMES.PINK)
+&lt;Button&gt;Hello!&lt;/Button&gt;</code></pre>
+                        </div>
+                    </div>
+                    <p class="chonks-text-sm chonks-text-secondary">Modern React components with hooks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chonks-mb-xl">
+            <h2 class="chonks-h2 chonks-display chonks-text-center chonks-mb-lg">Features</h2>
+
+            <div class="feature-grid">
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">🎨 Retro Brutalist Design</h3>
+                    <p>Sharp corners, offset shadows, and bold borders. Terminal aesthetic throughout.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">🎭 Swappable Themes</h3>
+                    <p>5 pre-built color schemes. Switch themes with a single CSS import.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">📦 Complete Components</h3>
+                    <p>16 components including 10 React components and 6 CSS-only components like modals, toasts, and tabs.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">📱 Responsive</h3>
+                    <p>Mobile-first design with breakpoints for all screen sizes.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">⚡ Zero Dependencies</h3>
+                    <p>Pure CSS and vanilla React. No bloat, no external libraries.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">♿ Accessible</h3>
+                    <p>Focus management, keyboard navigation, and ARIA support for better usability.</p>
+                </div>
+
+                <div class="chonks-card">
+                    <h3 class="chonks-h4 chonks-mb-sm">📚 Well Documented</h3>
+                    <p>Complete docs, examples, and copy-paste code snippets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="chonks-mb-xl">
+            <h2 class="chonks-h2 chonks-display chonks-text-center chonks-mb-lg">Component Preview</h2>
+
+            <div class="chonks-card chonks-card--no-padding chonks-mb-md">
+                <div class="chonks-card-header">
+                    <span>Buttons</span>
+                </div>
+                <div class="chonks-card-body">
+                    <div class="chonks-flex chonks-gap-sm" style="flex-wrap: wrap;">
+                        <button class="chonks-btn">Primary</button>
+                        <button class="chonks-btn chonks-btn--secondary">Secondary</button>
+                        <button class="chonks-btn chonks-btn--outline">Outline</button>
+                        <button class="chonks-btn chonks-btn--success">Success</button>
+                        <button class="chonks-btn chonks-btn--error">Error</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chonks-card chonks-card--no-padding chonks-mb-md">
+                <div class="chonks-card-header">
+                    <span>Form Example</span>
+                </div>
+                <div class="chonks-card-body">
+                    <div class="chonks-mb-md">
+                        <label class="chonks-label">Your Name</label>
+                        <input type="text" class="chonks-input" placeholder="Enter your name">
+                    </div>
+                    <div class="chonks-mb-md">
+                        <label class="chonks-label">Quick Action</label>
+                        <div class="chonks-input-group">
+                            <input type="text" class="chonks-input" placeholder="Enter URL...">
+                            <button class="chonks-btn">Convert</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chonks-alert chonks-alert--success chonks-mb-md">
+                <strong>Success!</strong> This is a success message.
+            </div>
+
+            <div class="chonks-loading">
+                <div class="chonks-spinner">
+                    <div class="chonks-spinner-dot"></div>
+                    <div class="chonks-spinner-dot"></div>
+                    <div class="chonks-spinner-dot"></div>
+                </div>
+                <p class="chonks-loading-text">Loading your content...</p>
+            </div>
+        </section>
+
+        <section class="chonks-mb-xl chonks-text-center">
+            <h2 class="chonks-h2 chonks-display chonks-mb-md">Ready to Get Started?</h2>
+            <p class="chonks-text-lg chonks-mb-lg">
+                Check out the full documentation and examples to start building.
+            </p>
+            <div class="chonks-flex chonks-justify-center chonks-gap-md">
+                <a href="examples/html/index.html" class="chonks-btn chonks-btn--lg">View Examples</a>
+                <a href="docs/getting-started.md" class="chonks-btn chonks-btn--lg chonks-btn--secondary">Get Started</a>
+                <a href="docs/components.md" class="chonks-btn chonks-btn--lg chonks-btn--outline">Components</a>
+            </div>
+        </section>
+
+        <footer class="chonks-text-center chonks-mb-xl" style="opacity: 0.7;">
+            <p class="chonks-text-sm">
+                Chonks UI - A retro brutalist design system<br>
+                Made by Cory Wilkerson | MIT License
+            </p>
+        </footer>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <div class="chonks-card" style="min-width: 200px;">
+            <p class="chonks-text-sm chonks-mb-sm"><strong>Switch Theme:</strong></p>
+            <div class="chonks-flex chonks-flex-col chonks-gap-xs">
+                <button class="chonks-btn chonks-btn--sm" onclick="switchTheme('pink')">Pink</button>
+                <button class="chonks-btn chonks-btn--sm chonks-btn--secondary" onclick="switchTheme('blue')">Blue</button>
+                <button class="chonks-btn chonks-btn--sm chonks-btn--secondary" onclick="switchTheme('purple')">Purple</button>
+                <button class="chonks-btn chonks-btn--sm chonks-btn--secondary" onclick="switchTheme('green')">Green</button>
+                <button class="chonks-btn chonks-btn--sm chonks-btn--secondary" onclick="switchTheme('greyscale')">Greyscale</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTheme(theme) {
+            // Remove existing theme
+            const existingTheme = document.querySelector('link[href*="themes/"]');
+            if (existingTheme) {
+                existingTheme.remove();
+            }
+
+            // Add new theme
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = `css/themes/${theme}.css`;
+            document.head.appendChild(link);
+
+            // Update button states
+            const buttons = document.querySelectorAll('.theme-switcher button');
+            buttons.forEach((btn, index) => {
+                const themes = ['pink', 'blue', 'purple', 'green', 'greyscale'];
+                if (themes[index] === theme) {
+                    btn.className = 'chonks-btn chonks-btn--sm';
+                } else {
+                    btn.className = 'chonks-btn chonks-btn--sm chonks-btn--secondary';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

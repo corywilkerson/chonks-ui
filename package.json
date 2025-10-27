@@ -1,0 +1,45 @@
+{
+  "name": "chonks-ui",
+  "version": "1.0.0",
+  "description": "A retro brutalist design system for power users",
+  "main": "css/chonks.css",
+  "style": "css/chonks.css",
+  "files": [
+    "css/",
+    "react/",
+    "docs/",
+    "examples/",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./css/chonks.css",
+      "require": "./css/chonks.css"
+    },
+    "./css": "./css/chonks.css",
+    "./css/*": "./css/*",
+    "./themes/*": "./css/themes/*",
+    "./react": "./react/src/index.js",
+    "./react/*": "./react/src/*"
+  },
+  "keywords": [
+    "design-system",
+    "ui",
+    "css",
+    "react",
+    "components",
+    "brutalist",
+    "retro",
+    "terminal"
+  ],
+  "author": "Cory Wilkerson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corywilkerson/chonks-ui"
+  },
+  "homepage": "https://github.com/corywilkerson/chonks-ui#readme",
+  "bugs": {
+    "url": "https://github.com/corywilkerson/chonks-ui/issues"
+  }
+}

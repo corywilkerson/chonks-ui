@@ -1,0 +1,71 @@
+{
+  "release-type": "node",
+  "packages": {
+    ".": {
+      "package-name": "chonks-ui",
+      "changelog-path": "CHANGELOG.md",
+      "version-file": "package.json"
+    },
+    "react": {
+      "package-name": "@chonks-ui/react",
+      "changelog-path": "CHANGELOG.md",
+      "version-file": "react/package.json"
+    }
+  },
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "draft": false,
+  "prerelease": false,
+  "include-component-in-tag": false,
+  "include-v-in-tag": true,
+  "pull-request-title-pattern": "chore: release ${version}",
+  "pull-request-header": "Release ${version}",
+  "pull-request-body": "This PR was automatically created by release-please. See [docs](https://github.com/googleapis/release-please) for more information.",
+  "changelog-type": "github",
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix", 
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "perf",
+      "section": "Performance Improvements"
+    },
+    {
+      "type": "revert",
+      "section": "Reverts"
+    },
+    {
+      "type": "docs",
+      "section": "Documentation"
+    },
+    {
+      "type": "style",
+      "section": "Styles"
+    },
+    {
+      "type": "chore",
+      "section": "Miscellaneous Chores"
+    },
+    {
+      "type": "refactor",
+      "section": "Code Refactoring"
+    },
+    {
+      "type": "test",
+      "section": "Tests"
+    },
+    {
+      "type": "build",
+      "section": "Build System"
+    },
+    {
+      "type": "ci",
+      "section": "Continuous Integration"
+    }
+  ]
+}

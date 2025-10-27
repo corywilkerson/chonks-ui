@@ -1,0 +1,26 @@
+/**
+ * Chonks UI - Greyscale Theme
+ * Classic monochrome aesthetic
+ */
+
+:root {
+  /* Greyscale Color Palette */
+  --chonks-primary: #4a4a4a;
+  --chonks-primary-dark: #2c2c2c;
+  --chonks-primary-light: #6e6e6e;
+
+  /* Neutral Colors */
+  --chonks-surface: #ffffff;
+  --chonks-background: #f5f5f5;
+  --chonks-text: #1a1a1a;
+  --chonks-text-secondary: #5a5a5a;
+  --chonks-text-muted: #8a8a8a;
+
+  /* Semantic Colors (Greyscale-tinted) - Sophisticated monochrome */
+  --chonks-success: #9ca3af;
+  --chonks-success-dark: #6b7280;
+  --chonks-warning: #d1d5db;
+  --chonks-warning-dark: #9ca3af;
+  --chonks-error: #6b7280;
+  --chonks-error-dark: #374151;
+}

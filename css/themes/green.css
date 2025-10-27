@@ -1,0 +1,26 @@
+/**
+ * Chonks UI - Green Theme
+ * Another bonus color scheme
+ */
+
+:root {
+  /* Green Color Palette */
+  --chonks-primary: #86efac;
+  --chonks-primary-dark: #22c55e;
+  --chonks-primary-light: #bbf7d0;
+
+  /* Neutral Colors */
+  --chonks-surface: #ffffff;
+  --chonks-background: #fafbfc;
+  --chonks-text: #2c3e50;
+  --chonks-text-secondary: #666666;
+  --chonks-text-muted: #999999;
+
+  /* Semantic Colors (Green-tinted) - Nature's palette */
+  --chonks-success: #86efac;
+  --chonks-success-dark: #16a34a;
+  --chonks-warning: #facc15;
+  --chonks-warning-dark: #ca8a04;
+  --chonks-error: #fca5a5;
+  --chonks-error-dark: #dc2626;
+}

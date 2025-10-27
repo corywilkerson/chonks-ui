@@ -1,0 +1,26 @@
+/**
+ * Chonks UI - Purple Theme
+ * A bonus color scheme
+ */
+
+:root {
+  /* Purple Color Palette */
+  --chonks-primary: #a78bfa;
+  --chonks-primary-dark: #7c3aed;
+  --chonks-primary-light: #c4b5fd;
+
+  /* Neutral Colors */
+  --chonks-surface: #ffffff;
+  --chonks-background: #fafbfc;
+  --chonks-text: #2c3e50;
+  --chonks-text-secondary: #666666;
+  --chonks-text-muted: #999999;
+
+  /* Semantic Colors (Purple-tinted) - Mystical gradient harmony */
+  --chonks-success: #a7f3d0;
+  --chonks-success-dark: #10b981;
+  --chonks-warning: #fbbf24;
+  --chonks-warning-dark: #f59e0b;
+  --chonks-error: #fda4af;
+  --chonks-error-dark: #f43f5e;
+}

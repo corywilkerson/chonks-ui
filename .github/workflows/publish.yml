@@ -1,0 +1,61 @@
+name: Publish to NPM
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Extract version from release
+        id: version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          VERSION=${VERSION#v}  # Remove 'v' prefix if present
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Publishing version: $VERSION"
+          
+      - name: Update package versions
+        run: |
+          # Update main package version
+          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
+          
+          # Update React package version  
+          cd react
+          npm version ${{ steps.version.outputs.version }} --no-git-tag-version
+          cd ..
+          
+      - name: Publish packages
+        run: |
+          # Publish main package
+          npm publish
+          
+          # Publish React package
+          cd react
+          npm publish
+          cd ..
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+      - name: Success message
+        run: |
+          echo "✅ Successfully published chonks-ui@${{ steps.version.outputs.version }}"
+          echo "✅ Successfully published @chonks-ui/react@${{ steps.version.outputs.version }}"
+          echo ""
+          echo "🔗 CDN available at:"
+          echo "   https://unpkg.com/chonks-ui@${{ steps.version.outputs.version }}/css/chonks.css"
+          echo "   https://unpkg.com/chonks-ui@${{ steps.version.outputs.version }}/css/themes/pink.css"

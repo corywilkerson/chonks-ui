@@ -1,0 +1,26 @@
+/**
+ * Chonks UI - Blue Theme
+ * Inspired by the bops.to/switch app aesthetic
+ */
+
+:root {
+  /* Blue Color Palette */
+  --chonks-primary: #87CEEB;
+  --chonks-primary-dark: #4682B4;
+  --chonks-primary-light: #B0E0E6;
+
+  /* Neutral Colors */
+  --chonks-surface: #FFFFFF;
+  --chonks-background: #F8FAFB;
+  --chonks-text: #2C3E50;
+  --chonks-text-secondary: #666666;
+  --chonks-text-muted: #999999;
+
+  /* Semantic Colors (Blue-tinted) - Ocean-inspired palette */
+  --chonks-success: #7dd3fc;
+  --chonks-success-dark: #0ea5e9;
+  --chonks-warning: #fde047;
+  --chonks-warning-dark: #eab308;
+  --chonks-error: #fca5a5;
+  --chonks-error-dark: #ef4444;
+}
